@@ -636,10 +636,6 @@ li {
   border-radius: 0px 20px 20px 0px;
   z-index: -1;
 }
-.partner-box {
-  display: flex;
-  justify-content: space-around;
-}
 .banner-section .partner .partner-box .slick-track {
   display: flex;
   align-items: center;
@@ -692,7 +688,8 @@ li {
   content: "";
 }
 .banner-section.about .overlay {
-  background-image: url(../img2/about-left.png), url(../img2/about-right.png);
+  background-image: url(../img2/about-left.png),
+    url(../img2/about-right.png);
   background-repeat: no-repeat;
   background-position: left 120px, right bottom;
 }
@@ -970,8 +967,8 @@ li {
 .footer-section .footer-box .logo {
   margin-bottom: 25px;
 }
-.logo {
-  color: black;
+.logo{
+    color: black;
 }
 .footer-section .footer-box .social-link {
   margin-top: 25px;
@@ -1089,13 +1086,13 @@ li {
   background-position: top;
 }
 .service-style2 .service-icon {
-  text-align: center;
-  background: #b4c8b8;
-  display: inline-block;
-  border-radius: 50%;
-  color: #fff;
-  transition: 0.4s;
-  padding: 13px;
+    text-align: center;
+    background: #b4c8b8;
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.4s;
+    padding: 13px;
 }
 .solutions-business .single-box {
   padding: 50px 30px;
@@ -1141,9 +1138,6 @@ li {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.container {
-  margin-left: 10rem;
-}
 .card-section .card-carousel-index .single {
   padding: 0 30px;
 }
@@ -1151,8 +1145,7 @@ li {
   width: 100%;
 }
 .card-section .card-carousel-index .button-area {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 30px;
 }
 .card-section .card-carousel-index .slick-prev {
   left: calc(50% - 100px);
@@ -1280,11 +1273,11 @@ li {
   background-position: top;
   background-repeat: no-repeat;
 }
-.importent-message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.importent-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .call-action .main-content {
   padding: 80px 40px;
@@ -1303,16 +1296,16 @@ li {
   background-position: top;
   background-repeat: no-repeat;
 }
-.myBtn {
-  padding: 0.5rem 1rem;
-  background: #b4c8b8;
+.myBtn{
+    padding: 0.5rem 1rem;
+    background: #b4c8b8;
 }
 .extra-icon-circle {
-  width: 80px;
-  background: #000;
-  color: #fff;
-  border-radius: 50%;
-  padding: 15px;
+    width: 80px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
 }
 .call-action.card-page .section-header h2 {
   color: var(--body-color);
@@ -3869,6 +3862,15 @@ li {
   .faqs-section.account::before {
     width: 100%;
     left: 0;
+  }
+  .financial-text{
+    font-size: 2rem;
+    font-weight: 800;
+    color:#055c2d;
+  }
+  .inner-container{
+    display: flex;
+    justify-content: center;
   }
   .how-works .nav-link .left-side::before {
     left: calc(50% + 5px);

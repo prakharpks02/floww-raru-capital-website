@@ -126,7 +126,7 @@ $(function ($) {
               position: 'top',
               horizontalAlign: 'left',
             },
-            colors:['#1A4DBE', '#055C2D'],
+            colors:['#26C485', '#055C2D'],
             dataLabels: {
               style: {
                 colors: ['#fff', '#fff']
