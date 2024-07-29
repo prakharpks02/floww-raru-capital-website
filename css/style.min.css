@@ -5,7 +5,8 @@
   --para-color: #2c3655;
   --head-color: #0a1023;
   --head-alt-color: #055c2d;
-  --hover-color: #1a4dbe;
+  --hover-color: #26C485;
+  /* NETMOS Green - 26C485, Old Template Blue Color - 1a4dbe  */
 }
 .collapsing {
   transition: 0.3s;
@@ -220,7 +221,7 @@ li {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #1a4dbe;
+  background: #26C485;
   margin-bottom: 30px;
 }
 .title span {
@@ -877,7 +878,7 @@ li {
 }
 .banner-section.affiliate .overlay {
   background-image: unset;
-  border-bottom: 1px dashed #1a4dbe;
+  border-bottom: 1px dashed #26C485;
 }
 .banner-section.affiliate .overlay .banner-content {
   padding: 265px 0 205px;
@@ -980,15 +981,15 @@ li {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #1a4dbe;
+  color: #26C485;
   border: 1px solid #b0baf1;
   transition: 0.3s;
   margin-right: 10px;
 }
 .footer-section .footer-box .social-link a.active,
 .footer-section .footer-box .social-link a:hover {
-  background: #1a4dbe;
-  border: 1px solid #1a4dbe;
+  background: #26C485;
+  border: 1px solid #26C485;
   color: #fff;
 }
 .footer-section .footer-box h5 {
@@ -1220,7 +1221,7 @@ li {
   padding: 12px 30px;
 }
 .card-section .nav-tabs .nav-item .nav-link.active {
-  background: #1a4dbe;
+  background: #26C485;
   color: var(--body-color);
 }
 .card-section .tab-content .cus-mar {
@@ -1539,7 +1540,7 @@ li {
   color: var(--body-color);
 }
 .personalized .cmn-btn {
-  background: #5ac4ff;
+  background: var(--body-color);
   box-shadow: 0px 12px 24px rgba(47, 65, 129, 0.1);
   color: #0a1023;
 }
@@ -1673,7 +1674,7 @@ li {
   margin-bottom: -10px;
 }
 .latest-articles .blog-item .content .read a {
-  color: #1a4dbe;
+  color: #26C485;
 }
 .latest-articles .blog-item .content .read a img {
   margin-left: 5px;
@@ -1797,15 +1798,15 @@ li {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #1a4dbe;
+  color: #26C485;
   border: 1px solid #b0baf1;
   transition: 0.3s;
   margin-right: 10px;
 }
 .latest-articles.blog-contant .side-single .social-link a.active,
 .latest-articles.blog-contant .side-single .social-link a:hover {
-  background: #1a4dbe;
-  border: 1px solid #1a4dbe;
+  background: #26C485;
+  border: 1px solid #26C485;
   color: #fff;
 }
 .latest-articles.blog-contant .side-single.social {
@@ -1842,7 +1843,7 @@ li {
   margin-top: 0;
 }
 .faqs-section .section-header p a {
-  color: #1a4dbe;
+  color: #26C485;
 }
 .faqs-section .accordion {
   margin-bottom: -20px;
@@ -1880,7 +1881,7 @@ li {
   right: 20px;
   width: 40px;
   height: 40px;
-  background: #1a4dbe;
+  background: #26C485;
   box-shadow: 0px 15px 20px rgba(26, 77, 190, 0.2);
   border-radius: 5px;
 }
@@ -1991,7 +1992,7 @@ li {
   margin-bottom: -120px;
 }
 .get-start .get-content {
-  background: #1a4dbe;
+  background: #26C485;
   border-radius: 10px;
   padding: 40px 55px 40px;
   position: relative;
@@ -2341,15 +2342,15 @@ li {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #1a4dbe;
+  color: #26C485;
   border: 1px solid #b0baf1;
   transition: 0.3s;
   margin-right: 10px;
 }
 .career-single .social-link a.active,
 .career-single .social-link a:hover {
-  background: #1a4dbe;
-  border: 1px solid #1a4dbe;
+  background: #26C485;
+  border: 1px solid #26C485;
   color: #fff;
 }
 .account-feature .cus-mar {
@@ -2760,7 +2761,7 @@ li {
   padding: 12px 30px;
 }
 .choose-card .nav-tabs .nav-item .nav-link.active {
-  background: #1a4dbe;
+  background: #26C485;
   color: var(--body-color);
 }
 .choose-card .single-card img {
@@ -2917,7 +2918,7 @@ li {
   font-size: inherit;
 }
 .business-loan-section .main-content form .ui-widget-header {
-  background: #1a4dbe;
+  background: #26C485;
 }
 .business-loan-section .main-content form .ui-widget-content {
   border: none;
@@ -2928,7 +2929,7 @@ li {
 .business-loan-section .main-content form .ui-slider-handle.ui-state-default {
   width: 40px;
   height: 40px;
-  background: #1a4dbe;
+  background: #26C485;
   box-shadow: 0px 4px 4px rgba(53, 78, 133, 0.3);
   border-radius: 20px;
   border: none;
@@ -3061,7 +3062,7 @@ li {
   -webkit-appearance: none;
   width: 100%;
   height: 8px;
-  background: linear-gradient(to right, #1a4dbe, #1a4dbe) no-repeat;
+  background: linear-gradient(to right, #26C485, #26C485) no-repeat;
   background-size: calc(
       (var(--value) - var(--min)) * 100% / (var(--max) - var(--min))
     )
@@ -3073,7 +3074,7 @@ li {
   appearance: none;
   width: 40px;
   height: 40px;
-  background: #1a4dbe;
+  background: #26C485;
   box-shadow: 0px 4px 4px rgba(53, 78, 133, 0.3);
   border-radius: 20px;
   cursor: pointer;
@@ -3107,7 +3108,7 @@ li {
   font-size: inherit;
 }
 .loan-calculation .ui-widget-header {
-  background: #1a4dbe;
+  background: #26C485;
 }
 .loan-calculation .ui-widget-content {
   border: none;
@@ -3118,7 +3119,7 @@ li {
 .loan-calculation .ui-slider-handle.ui-state-default {
   width: 40px;
   height: 40px;
-  background: #1a4dbe;
+  background: #26C485;
   box-shadow: 0px 4px 4px rgba(53, 78, 133, 0.3);
   border-radius: 20px;
   border: none;
@@ -3534,15 +3535,15 @@ li {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #1a4dbe;
+  color: #26C485;
   border: 1px solid #b0baf1;
   transition: 0.3s;
   margin-right: 10px;
 }
 .author-section .social-link a.active,
 .author-section .social-link a:hover {
-  background: #1a4dbe;
-  border: 1px solid #1a4dbe;
+  background: #26C485;
+  border: 1px solid #26C485;
   color: #fff;
 }
 .sign-in-up {
