@@ -23,6 +23,79 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style-rtl.min.css" id="rtl-stylesheet" disabled>
+
+    <style>
+      .animated-item {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+       }
+
+       .flag {
+  transition: transform 0.3s ease;
+       }
+
+       .text {
+         transition: color 0.3s ease;
+       }
+
+       .animated-item:hover .flag {
+  transform: scale(1.5); /* Make the flag 1.5 times bigger */
+       }
+
+       .animated-item:hover .text {
+  color: #007bff; /* Change text color to blue on hover */
+       }
+       .single-box {
+    background-color: #fff; /* Box background color */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.single-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.thumb img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth image animation */
+}
+
+.single-box:hover .thumb img {
+    transform: scale(1.1); /* Enlarge the image slightly on hover */
+}
+
+.content h5 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+    transition: color 0.3s ease; /* Smooth text color change */
+}
+
+.single-box:hover .content h5 {
+    color: #007bff; /* Change heading color on hover */
+}
+
+.content p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Smooth paragraph color change */
+}
+
+.single-box:hover .content p {
+    color: #333; /* Darker paragraph color on hover */
+}
+
+
+
+    </style>
 </head>
 
 <body>
@@ -105,7 +178,7 @@
                                     <p class="xlr">Your Partner in Financial Growth and Security</p>
                                 </div>
                                 <div class="bottom-area">
-                                    <a href="register.html" class="cmn-btn">Get in touch</a>
+                                    <a href="contact-us.html" class="cmn-btn">Get in touch</a>
                                     <!-- <a href="contact-us.html" class="cmn-btn second">Get in touch</a> -->
                                 </div>
                             </div>
@@ -179,7 +252,8 @@
                                 combines deep market analysis with cutting-edge technology to execute trades across a
                                 diverse range of asset classes, including equities, derivatives, and
                                 commodities.<br><br>
-                                Exchanges we currently Trade in
+                                
+                                <p class="fw-bold">Exchanges we currently Trade in</p>
 
 
                             </p>
@@ -188,26 +262,29 @@
                                     <!-- <span class="check d-flex align-items-center justify-content-center">
                                         <img src="img2/check.png" alt="icon">
                                     </span> -->
-                                    <span class="flag-icon flag-icon-in"></span> &nbsp;&nbsp;
-                                    <span>NSE IX </span>
-
-
-
+                                    <div class="animated-item">
+                                        <span class="flag-icon flag-icon-in flag"></span>&nbsp;&nbsp;
+                                        <span class="text">NSE IX</span>
+                                      </div>                                                                                                     
 
                                 </li>
                                 <li class="list-item d-flex align-items-center ">
                                     <!-- <span class="check d-flex align-items-center justify-content-center">
                                         <img src="img2/check.png" alt="icon">
                                     </span> -->
-                                    <span class="flag-icon flag-icon-us"></span> &nbsp;&nbsp;
-                                    <span>COMEX</span>
+                                    <div class="animated-item">
+                                        <span class="flag-icon flag-icon-us flag"></span>&nbsp;&nbsp;
+                                        <span class="text">COMEX</span>
+                                      </div>
                                 </li>
                                 <li class="list-item d-flex align-items-center ">
                                     <!-- <span class="check d-flex align-items-center justify-content-center">
                                         <img src="img2/check.png" alt="icon">
                                     </span> -->
-                                    <span class="flag-icon flag-icon-us"></span> &nbsp;&nbsp;
-                                    <span> NYMEX</span>
+                                    <div class="animated-item">
+                                        <span class="flag-icon flag-icon-us flag"></span>&nbsp;&nbsp;
+                                        <span class="text">NYMEX</span>
+                                      </div>
                                 </li>
                                 <!-- <li class="list-item d-flex align-items-center ">
                                     <span class="check d-flex align-items-center justify-content-center">
@@ -245,7 +322,7 @@
                                 <img src="img2/sheled.png" alt="icon">
                             </span>
                             <h5 class="sub-title">Financial Product Distribution</h5>
-                            <h2 class="title">Your Guide to International Market</h2>
+                            <h2 class="title">Where Global Investments Meet Local Excellence</h2>
                             <p>Raru Capital IFSC Pvt Ltd holds a prestigious Distribution of International Products
                                 License, which enables the firm to offer a broad array of global financial products to
                                 its clients. This license empowers Raru Capital to provide access to a wide range of
@@ -272,7 +349,7 @@
                                     <span class="check d-flex align-items-center justify-content-center">
                                         <img src="img2/check.png" alt="icon">
                                     </span>
-                                    <span>Retirement Planning Products</span>
+                                    <span>Forex Management Solutions Products</span>
                                 </li>
                                 <li class="list-item d-flex align-items-center ">
                                     <span class="check d-flex align-items-center justify-content-center">
@@ -300,7 +377,7 @@
                                 <img src="img2/sheled.png" alt="icon">
                             </span>
                             <h5 class="sub-title">IIBX Broking</h5>
-                            <h2 class="title">Get Strategic Financial Solutions</h2>
+                            <h2 class="title">Transforming Opportunities in Billion Markets</h2>
                             <p>Raru Capital IFSC Pvt Ltd recently became a Trading Member of the International Bullion
                                 Exchange (IIBX), marking a significant expansion of its capabilities in the bullion
                                 market.
@@ -363,11 +440,11 @@
                         <div class="section-header text-center">
                             <h5 class="sub-title">Your One stop solution to achiving Financial Success</h5>
                             <h2 class="title">Our Core Philosophy</h2>
-                            <p>To make RARU India's most revered Financial Consultation Firm</p>
+                            <p>Shaping RARU into a Symbol of Financial Trust and Growth revered Financial Consultation Firm</p>
                         </div>
                     </div>
                 </div>
-                <div class="row cus-mar">
+                <div class="row cus-mar section-text">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-box text-center">
                             <div class="thumb d-flex justify-content-center align-items-center">
@@ -378,12 +455,12 @@
                                 <p>Our clients are at the heart of everything we do. We believe in a highly personalized
                                     approach that starts with understanding your unique financial goals, challenges, and
                                     aspirations</p>
-                                <a href="register.html" class="btn-arrow">Open Account
+                                <!-- <a href="register.html" class="btn-arrow">Open Account
                                     <img src="img2/arrow-right.png" alt="arrow">
-                                </a>
+                                </a> -->
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                     <div class="col-lg-4 col-md-6">
                         <div class="single-box text-center">
                             <div class="thumb d-flex justify-content-center align-items-center">
@@ -394,9 +471,9 @@
                                 <p>Trust is the cornerstone of a successful financial relationship. Our transparent fee
                                     structures and ethical practices are designed to build and sustain your trust,
                                     making us a reliable partner in achieving your goals</p>
-                                <a href="register.html" class="btn-arrow">Start Saving
+                                <!-- <a href="register.html" class="btn-arrow">Start Saving
                                     <img src="img2/arrow-right.png" alt="arrow">
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                     </div>
@@ -410,9 +487,9 @@
                                 <p>We work closely with you to develop strategic plans that adapt to your evolving needs
                                     and market conditions. We ensure that you stay on track to achieve your financial
                                     objectives and navigate any challenges that arise</p>
-                                <a href="register.html" class="btn-arrow">Open Account
+                                <!-- <a href="register.html" class="btn-arrow">Open Account
                                     <img src="img2/arrow-right.png" alt="arrow">
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                     </div>
@@ -583,7 +660,7 @@
                             <p>Get in touch with us, and we will help you to create the right one for your business or
                                 personal needs.</p>
                         </div>
-                        <a href="https://rarucapital.com/blog/accelerate-your-business-growth-while-we-handle-the-finances-a-winning-strategy/"
+                        <a href="services.html"
                             target="_blank" class="cmn-btn">Know More</a>
                     </div>
                 </div>
@@ -844,7 +921,9 @@
                             <h5 class="sub-title">If you have question,we have answer</h5>
                             <h2 class="title">Frequently asked questions</h2>
                             <p>Get answers to all questions you have and boost your knowledge so you can save, invest
-                                and spend smarter. <a href="faqs.html">See all questions here!</a></p>
+                                and spend smarter. 
+                                <!-- <a href="faqs.html">See all questions here!</a> -->
+                            </p>
                         </div>
                     </div>
                 </div>
