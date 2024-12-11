@@ -93,6 +93,65 @@
     color: #333; /* Darker paragraph color on hover */
 }
 
+/* .animated-item{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(12, end) infinite, erasing 4s steps(12, end) 4s infinite;
+}
+@keyframes typing{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+} */
+
+/* .animated-title {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; 
+} */
+
+/* .animated-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+
+  animation: blinkCursor 0.8s steps(2) infinite;
+} */
+
+/* @keyframes blinkCursor {
+  0%, 75% {
+    opacity: 1;
+  }
+  76%, 100% {
+    opacity: 0;
+  }
+} */
+
+.animated-title h1 {
+  white-space: nowrap; 
+  overflow: hidden; 
+  display: inline-block; 
+  border-right: 5px solid black; 
+  animation: typing 5s steps(12) infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 480px;
+  }
+  100% {
+    width: 0; 
+  }
+}
 
 
     </style>
@@ -174,11 +233,13 @@
                             <div class="main-content">
                                 <div class="top-area section-text justify-content-center">
                                     <h4 class="sub-title">Holistic. Precise. Convenient</h4>
-                                    <h1 class="title">RARU Capital</h1>
+                                    <div class="animated-title">
+                                        <h1>RARU Capital</h1>
+                                    </div>
                                     <p class="xlr">Your Partner in Financial Growth and Security</p>
                                 </div>
                                 <div class="bottom-area">
-                                    <a href="contact-us.html" class="cmn-btn">Get in touch</a>
+                                    <a href="contact-us.html" class="cmn-btn">Get in Touch</a>
                                     <!-- <a href="contact-us.html" class="cmn-btn second">Get in touch</a> -->
                                 </div>
                             </div>
