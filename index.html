@@ -152,6 +152,22 @@
     width: 0; 
   }
 }
+.rotating-image{
+    display: block;
+    margin: 0 auto; /* Center the icon */
+    width: 80px; /* Set the icon size */
+    height: auto;
+    animation: rotateIcon 5s linear infinite; 
+}
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
 
 
     </style>
@@ -509,7 +525,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-box text-center">
                             <div class="thumb d-flex justify-content-center align-items-center">
-                                <img src="img2/checking.png" alt="checking">
+                                <img class="rotating-image" src="img2/checking.png" alt="checking">
                             </div>
                             <div class="content">
                                 <h5>Client Centric Approach</h5>
@@ -525,7 +541,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-box text-center">
                             <div class="thumb d-flex justify-content-center align-items-center">
-                                <img src="img2/savings.png" alt="checking">
+                                <img class="rotating-image" src="img2/savings.png" alt="checking">
                             </div>
                             <div class="content">
                                 <h5>Integrity and Transparency</h5>
@@ -541,7 +557,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-box text-center">
                             <div class="thumb d-flex justify-content-center align-items-center">
-                                <img src="img2/business.png" alt="checking">
+                                <img class="rotating-image" src="img2/business.png" alt="checking">
                             </div>
                             <div class="content">
                                 <h5>Long Term Partnership</h5>
@@ -1206,7 +1222,7 @@
                                 data-label-1="Website" data-button-color="#26C485" data-button-text-color="#FFFFFF"
                                 data-site="https://rarucapital.com/blog/" async></script>
                         </div>
-                        <p>Get the latest news on your Email</p>
+                        <p>Get the latest updates on your Email</p>
                     </div>
                 </div>
             </div>
