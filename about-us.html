@@ -22,6 +22,57 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style-rtl.min.css" id="rtl-stylesheet" disabled>
+
+    <style>
+        .icon img {
+    display: block;
+    margin: 0 auto; /* Center the icon */
+    width: 80px; /* Set the icon size */
+    height: auto;
+    animation: rotateIcon 5s linear infinite; /* Apply the rotation */
+}
+
+/* Keyframes for rotating the icon */
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+.single-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensure equal height for all boxes */
+}
+.cus-ord .img-area {
+    perspective: 1000px; /* Add perspective to enable the 3D flip effect */
+    width: 100%; /* Ensure the container takes the full width */
+}
+
+.cus-ord .img-area img {
+    width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.6s ease; /* Smooth transition for flip */
+    transform-style: preserve-3d; /* Preserve 3D space for the flip effect */
+}
+
+.cus-ord .img-area:hover img {
+    transform: rotateY(180deg); /* Flip the image on hover */
+}
+
+
+    </style>
 </head>
 
 <body>
@@ -99,7 +150,7 @@
                     <div class="row justify-content-start">
                         <div class="col-lg-7 col-md-10">
                             <div class="main-content">
-                                <h1>About</h1>
+                                <h1>About Raru Capital</h1>
                                 <div class="breadcrumb-area">
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb d-flex align-items-center">
@@ -125,7 +176,7 @@
                     <div class="col-lg-6">
                         <div class="text-area">
                             <h5 class="sub-title">About Us</h5>
-                            <h2 class="title">RARU CAPITAL IFSC PRIVATE LIMITED</h2>
+                            <h4 class="title">RARU CAPITAL IFSC PRIVATE LIMITED</h4>
                             <p> Raru Capital IFSC Pvt Ltd is a renowned financial services unit based in GIFT City,
                                 engages in a wide range of
                                 international and domestic trading activities.
@@ -204,7 +255,7 @@
                     <div class="col-lg-9">
                         <div class="section-header text-center">
                             <h5 class="sub-title">Why should you choose us</h5>
-                            <h2 class="title">The Three pillars of Raru Capital</p>
+                            <h2 class="title">The Three pillars of Raru Capital</h2>
                         </div>
                     </div>
                 </div>
@@ -307,7 +358,7 @@
                             </ul> -->
                         </div>
                     </div>
-                    <div class="col-lg-6 text-end">
+                    <div class="col-lg-6 text-end cus-ord">
                         <div class="img-area">
                             <img src="img2/gift-city.png" alt="image">
                         </div>

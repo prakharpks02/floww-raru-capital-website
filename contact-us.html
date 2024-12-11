@@ -22,6 +22,86 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style-rtl.min.css" id="rtl-stylesheet" disabled>
+
+    <style>
+        .row.cus-mar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.single-box {
+    background-color: var(--hover-color);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensure each box takes up full height */
+    box-sizing: border-box;
+    border-radius: 8px;
+    flex: 1; /* Ensure all boxes are the same size */
+    margin: 10px; /* Add spacing between boxes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Prevent text from overflowing */
+}
+
+.single-box:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.icon-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+p a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    word-wrap: break-word; /* Ensure the email link breaks properly */
+    word-break: break-word; /* Break long words like email address */
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .single-box {
+        flex: 1 1 100%; /* Ensure the boxes take up full width on smaller screens */
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+    
+    h5 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .icon-box img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+    </style>
 </head>
 
 <body>
@@ -134,33 +214,38 @@
                                 <div class="row gy-4">
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <label for="surename">Your Name</label>
-                                            <input type="text" placeholder="Enter Your Company Name" required
-                                                id="surename">
+                                            <label for="name">Your Name</label>
+                                            <input type="text" id="name" placeholder="Enter Your Name" required>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <label for="phone">Phone Number</label>
-                                            <input type="text" placeholder="Enter Your Phone Number" required
-                                                id="phone">
+                                            <label for="mobile">Phone Number</label>
+                                            <input type="text" id="mobile" placeholder="Enter Your Phone Number" required>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <label for="email">Your Email </label>
-                                            <input type="text" placeholder="Enter Your Email" required id="email">
+                                            <label for="email">Your Email</label>
+                                            <input type="email" id="email" placeholder="Enter Your Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="companyEmail">Company Email</label>
+                                            <!-- Non-editable company email -->
+                                            <input type="email" id="companyEmail" value="info@rarucapital.com" readonly>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group mb-0">
-                                            <label for="message">Your Message </label>
-                                            <textarea required id="message" placeholder="Enter Your Message"></textarea>
+                                            <label for="message">Your Message</label>
+                                            <textarea id="message" placeholder="Enter Your Message" required></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="btn-area text-center">
-                                    <button class="cmn-btn">Send Message</button>
+                                    <button type="submit" class="cmn-btn">Send Message</button>
                                 </div>
                             </form>
                         </div>
@@ -201,8 +286,7 @@
                                 <img src="img2/need-help-1.png" alt="icon">
                             </div>
                             <h5>Email Address</h5>
-                            <p><a href="mailto:info@rarucapital.com"
-                                    style="color: black; font-size: 25px;">info@rarucapital.com</a></p>
+                            <p><a href="mailto:info@rarucapital.com" style="color: black; font-size: 25px;">info@rarucapital.com</a></p>
                             <br>
                         </div>
                     </div>
@@ -212,12 +296,11 @@
                                 <img src="img2/need-help-3.png" alt="icon">
                             </div>
                             <h5>Location</h5>
-                            <p><a href="index" style="color: black;">1121, 11th Floor Signature Building, Block 13B, SEZ
-                                    Zone
-                                    I, Gift City, Gujarat</a></p>
+                            <p><a href="index" style="color: black;">1121, 11th Floor Signature Building, Block 13B, SEZ Zone I, Gift City, Gujarat</a></p>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
