@@ -25,53 +25,64 @@
 
     <style>
         .icon img {
-    display: block;
-    margin: 0 auto; /* Center the icon */
-    width: 80px; /* Set the icon size */
-    height: auto;
-    animation: rotateIcon 5s linear infinite; /* Apply the rotation */
-}
+            display: block;
+            margin: 0 auto;
+            /* Center the icon */
+            width: 80px;
+            /* Set the icon size */
+            height: auto;
+            animation: rotateIcon 5s linear infinite;
+            /* Apply the rotation */
+        }
 
-/* Keyframes for rotating the icon */
-@keyframes rotateIcon {
-    0% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(-45deg);
-    }
-}
+        /* Keyframes for rotating the icon */
+        @keyframes rotateIcon {
+            0% {
+                transform: rotate(45deg);
+            }
 
-.single-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 100%; /* Ensure equal height for all boxes */
-}
-.cus-ord .img-area {
-    perspective: 1000px; /* Add perspective to enable the 3D flip effect */
-    width: 100%; /* Ensure the container takes the full width */
-}
+            100% {
+                transform: rotate(-45deg);
+            }
+        }
 
-.cus-ord .img-area img {
-    width: 100%; /* Ensure the image fits within the container */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.6s ease; /* Smooth transition for flip */
-    transform-style: preserve-3d; /* Preserve 3D space for the flip effect */
-}
+        .single-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            /* Ensure equal height for all boxes */
+        }
 
-.cus-ord .img-area:hover img {
-    transform: rotateY(180deg); /* Flip the image on hover */
-}
+        .cus-ord .img-area {
+            perspective: 1000px;
+            /* Add perspective to enable the 3D flip effect */
+            width: 100%;
+            /* Ensure the container takes the full width */
+        }
 
+        .cus-ord .img-area img {
+            width: 100%;
+            /* Ensure the image fits within the container */
+            height: auto;
+            /* Maintain aspect ratio */
+            transition: transform 0.6s ease;
+            /* Smooth transition for flip */
+            transform-style: preserve-3d;
+            /* Preserve 3D space for the flip effect */
+        }
 
+        .cus-ord .img-area:hover img {
+            transform: rotateY(180deg);
+            /* Flip the image on hover */
+        }
     </style>
 </head>
 
@@ -467,7 +478,7 @@
                                 data-label-1="Website" data-button-color="#26C485" data-button-text-color="#FFFFFF"
                                 data-site="https://rarucapital.com/blog/" async></script>
                         </div>
-                        <p>Get the latest news on your Email</p>
+                        <p>Get the latest updates on your Email</p>
                     </div>
                 </div>
             </div>
