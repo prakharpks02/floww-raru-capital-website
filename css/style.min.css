@@ -3560,6 +3560,30 @@ li {
   background-repeat: no-repeat;
   background-position: right top;
 }
+.mobile-img {
+  display: none;
+  /* width: 100%;
+  height: 100%; */
+}
+
+@media (max-width: 768px) {
+  .sign-in-up::before {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    background-image: url(../img2/sign-in-up-bg.png);
+    width: 100%;
+    height: 500px; 
+    /* margin-bottom: -20px; */
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    
+  }
+}
+
 .sign-in-up form {
   margin-top: -10px;
 }
@@ -3578,9 +3602,11 @@ li {
 }
 .sign-in-up form .single-input .password-show {
   padding: 0 20px;
-  background: #f5faff;
+  background: #26C485;
   border: 1px solid #eef1ff;
   border-radius: 5px;
+  width: max-content;
+  margin-bottom: 7px;
 }
 .sign-in-up form .single-input .password-show input {
   padding: 0;
